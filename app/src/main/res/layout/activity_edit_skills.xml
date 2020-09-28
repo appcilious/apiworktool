@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50dp">
+        <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDIT SKILL" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_20dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_editskill" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginRight="@dimen/_15dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_add" android:padding="@dimen/_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_width="@dimen/_18dp" android:layout_height="@dimen/_18dp" android:src="@drawable/add_blue"/>
+                <TextView android:textSize="@dimen/_14sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:text="Add" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textColor="@color/colorWhite" android:background="@drawable/button_style" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_margin="@dimen/_15dp" android:text="Modify Competences" android:fontFamily="@font/open_sans_bold"/>
+    </LinearLayout>
+</LinearLayout>

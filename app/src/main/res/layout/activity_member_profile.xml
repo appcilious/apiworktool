@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40dp" android:layout_marginTop="@dimen/_15dp">
+        <TextView android:textSize="@dimen/_15sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MEMBER" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_80dp">
+        <TextView android:textSize="@dimen/_16sp" android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_90dp" android:text="Genral Informations" android:fontFamily="@font/open_sans_bold"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/card_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_20dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp">
+                <ImageView android:id="@+id/mail1" android:layout_width="@dimen/_25sp" android:layout_height="@dimen/_25dp" android:src="@drawable/mail3" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25dp" android:layout_toRightOf="@+id/mail1">
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/tvMemberProfileEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:text="v.carouna@gmail.com"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp">
+                <ImageView android:id="@+id/calender" android:layout_width="@dimen/_25dp" android:layout_height="@dimen/_25dp" android:src="@drawable/calendar3" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25dp" android:layout_toRightOf="@+id/calender">
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Birth Date"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvMemberProfileDOB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8dp" android:text="1985-03-13"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp">
+                <ImageView android:id="@+id/phone" android:layout_width="@dimen/_25dp" android:layout_height="@dimen/_25dp" android:src="@drawable/telephone3" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25dp" android:layout_toRightOf="@+id/phone">
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cellphone"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvMemberProfileTelephoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5dp" android:text="011122336554"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvMemberProfileMobileNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5dp" android:text="011122336554"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp">
+                <ImageView android:id="@+id/postal" android:layout_width="@dimen/_25dp" android:layout_height="@dimen/_25dp" android:src="@drawable/postal3" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25dp" android:layout_toRightOf="@+id/postal">
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Postal Code"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvMemberProfilePostalCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:text="93000"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp" android:layout_marginBottom="@dimen/_15dp">
+                <ImageView android:id="@+id/address" android:layout_width="@dimen/_25dp" android:layout_height="@dimen/_25dp" android:src="@drawable/address3" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25dp" android:layout_toRightOf="@+id/address">
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvMemberProfileAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:text="1 rue de la giate"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="@dimen/_100dp" android:layout_marginLeft="@dimen/_25dp" android:layout_marginTop="@dimen/_60dp" android:layout_marginRight="@dimen/_25dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivMemberProfileImage" android:layout_width="@dimen/_70dp" android:layout_height="@dimen/_70dp" android:layout_margin="@dimen/_10dp" android:src="@drawable/person_girl" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_toRightOf="@+id/personImage" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tvMemberProfileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Samia Adelleaoub" android:maxLines="1" android:fontFamily="@font/open_sans_bold"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/ivMemberProfileStatus" android:background="@drawable/green_circle" android:layout_width="@dimen/_15dp" android:layout_height="@dimen/_15dp"/>
+                    <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorBlack" android:ellipsize="end" android:id="@+id/tvMemberProfileStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:text="I am available" android:maxLines="1" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

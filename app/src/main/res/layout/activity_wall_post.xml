@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_70dp" android:layout_marginTop="@dimen/_15dp">
+        <ImageView android:id="@+id/cross" android:layout_width="@dimen/_20dp" android:layout_height="@dimen/_20dp" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/close_white" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/ll_uploadphoto" android:background="@drawable/eventbackground" android:layout_width="100dp" android:layout_height="@dimen/_100dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/_15dp" android:layout_centerHorizontal="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_eventphoto" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_50dp" android:src="@drawable/upload"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:text="Upload Event Photo"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/tv_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10dp" android:text="Publish" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:textColor="@color/textGrey" android:id="@+id/tv_walltitle" android:background="@color/colorWhite" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginTop="@dimen/_10dp" android:hint="Titre du poste"/>
+        <EditText android:id="@+id/tv_emailwall" android:background="@color/colorWhite" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginTop="@dimen/_10dp" android:hint=" @ recruteurs"/>
+        <LinearLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="@dimen/_250dp" android:layout_marginTop="@dimen/_10dp">
+            <EditText android:id="@+id/tv_wallmessga" android:background="@color/colorWhite" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Write a message on your wall"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

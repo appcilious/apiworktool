@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10dp" app:cardCornerRadius="@dimen/_5dp" app:cardElevation="@dimen/_5dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <ImageView android:id="@+id/ivMyEvent" android:layout_width="0dp" android:layout_height="@dimen/_130dp" android:src="@drawable/profileplaceholder" android:scaleType="fitXY" android:layout_weight="0.8"/>
+            <RelativeLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10dp" android:layout_weight="1.2">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8dp">
+                        <TextView android:textSize="@dimen/_14sp" android:textColor="@color/colorBlack" android:id="@+id/tvMyEventTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Young Encounter" android:fontFamily="@font/open_sans_bold"/>
+                        <ImageView android:id="@+id/ivEventType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:src="@drawable/lock" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/_20dp" android:layout_marginTop="@dimen/_5dp" android:weightSum="2">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2">
+                            <TextView android:textSize="12sp" android:textColor="@color/textGrey" android:id="@+id/tvDateHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date :"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/textGrey" android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="17.04.2020" android:layout_toRightOf="@+id/tvDateHeading"/>
+                            <View android:background="@color/colorGrey" android:layout_width="1dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10dp" android:layout_weight="0.8">
+                            <TextView android:textSize="12sp" android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Time: "/>
+                            <TextView android:textSize="12sp" android:textColor="@color/textGrey" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:03"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/_13sp" android:textColor="@color/textGrey" android:id="@+id/tvMyEventName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mr. Mezu Lionel" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="@dimen/_13sp" android:textColor="@color/textGrey" android:id="@+id/tvMyEventType" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reseau" android:fontFamily="@font/open_sans_bold"/>
+                    <View android:background="@color/colorGrey" android:layout_width="match_parent" android:layout_height="@dimen/_1dp" android:layout_marginTop="@dimen/_5dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/_20dp" android:layout_marginBottom="@dimen/_5dp" android:weightSum="3" android:layout_alignParentBottom="true">
+                    <LinearLayout android:id="@+id/llParticipents" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_11sp" android:textColor="@color/colorPrimary" android:layout_gravity="center" android:id="@+id/particpents" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Participent" android:fontFamily="@font/open_sans_bold" android:textAlignment="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:background="@color/colorGrey" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.03"/>
+                    <LinearLayout android:id="@+id/llEditEvent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_11sp" android:textColor="@color/colorPrimary" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Edit" android:fontFamily="@font/open_sans_bold" android:textAlignment="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:background="@color/colorGrey" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.03"/>
+                    <LinearLayout android:id="@+id/ll_deleteEvent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_11sp" android:textColor="@color/colorPrimary" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Remove" android:fontFamily="@font/open_sans_bold" android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginTop="@dimen/_15dp">
+        <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD ARTICLE" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+        <ImageView android:id="@+id/ivBackButton" android:layout_width="@dimen/_20dp" android:layout_height="@dimen/_20dp" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/arrow_white" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10dp">
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_15dp" android:text="TITLE OF YOUR ARTICLE" android:fontFamily="@font/open_sans_bold"/>
+            <EditText android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50"/>
+                    <TextView android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5dp" android:text="Characters Remaining"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_15dp" android:text="STATUS" android:fontFamily="@font/open_sans_bold"/>
+            <Spinner android:id="@+id/statusSpinner" android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="SUMMERY" android:fontFamily="@font/open_sans_bold"/>
+            <EditText android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_80dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50"/>
+                    <TextView android:textColor="@color/textGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5dp" android:text="Characters Remaining"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_15dp" android:text="FILE" android:fontFamily="@font/open_sans_bold"/>
+            <Button android:textColor="@color/colorPrimary" android:background="@drawable/button_style_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp" android:text="To Choose" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_15dp" android:text="ADDING VIDEO" android:fontFamily="@font/open_sans_bold"/>
+            <Button android:textColor="@color/colorPrimary" android:background="@drawable/button_style_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp" android:text="To Choose" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_10dp">
+                <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Insert this video on the home page"/>
+            </LinearLayout>
+            <TextView android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="CONTENT OF THE ARTICLE" android:fontFamily="@font/open_sans_bold"/>
+            <EditText android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_80dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <RelativeLayout android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/_60dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginBottom="@dimen/_15dp">
+                <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

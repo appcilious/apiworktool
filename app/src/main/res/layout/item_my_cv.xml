@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:layout_marginBottom="@dimen/_10dp" app:cardCornerRadius="5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp">
+            <ImageView android:id="@+id/cv2" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_60dp" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/cv2" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:weightSum="2" android:layout_toRightOf="@+id/cv2" android:layout_centerVertical="true" android:textAlignment="textStart">
+                <TextView android:textSize="@dimen/_16sp" android:textColor="@color/colorBlack" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Control Preperative" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="@dimen/_14sp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/button_style4" android:padding="@dimen/_5dp" android:layout_width="wrap_content" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:text="Available" android:layout_weight="1" android:fontFamily="@font/open_sans_bold" android:textAlignment="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_90dp">
+            <TextView android:textSize="@dimen/_16sp" android:textColor="@color/textGrey" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lydie Buoisne" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+        </LinearLayout>
+        <View android:background="@color/textGrey" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/_10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8dp" android:layout_marginBottom="@dimen/_10dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/download" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/uv_download11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:src="@drawable/download"/>
+                <TextView android:textSize="@dimen/_13sp" android:textColor="@color/colorPrimary" android:id="@+id/tv_download11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:text="Generate and Download cv" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visibility" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/colorPrimary" android:id="@+id/tv_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:text="View" android:layout_toRightOf="@+id/iv_view"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

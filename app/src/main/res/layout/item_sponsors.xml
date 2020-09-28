@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10dp">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profile_image1" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/demo1" android:layout_centerVertical="true" app:civ_border_width="@dimen/_1dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_linear1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:weightSum="2" android:layout_toRightOf="@+id/profile_image1" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/_14sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Aaalliontest" android:layout_weight="1"/>
+            <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:background="@drawable/button_style_blue_stroke" android:layout_width="0dp" android:layout_height="@dimen/_30dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:text="Select" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/colorGrey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp"/>
+</LinearLayout>

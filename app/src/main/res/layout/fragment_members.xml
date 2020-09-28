@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/serach_background" android:layout_width="match_parent" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp" android:layout_marginRight="@dimen/_20dp">
+        <ImageView android:id="@+id/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:src="@drawable/search" android:layout_centerVertical="true"/>
+        <EditText android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:id="@+id/ed_searchMembers" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:hint="Search" android:layout_toRightOf="@+id/search_icon" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_20dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20dp">
+            <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvTotalMember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:text="No Members added" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_add_member" android:background="@drawable/button_style2" android:layout_width="wrap_content" android:layout_height="@dimen/_40dp" android:layout_marginRight="@dimen/_8dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/add"/>
+                <TextView android:textSize="@dimen/_15sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp" android:text="Member"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_members" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8dp" android:layout_marginBottom="@dimen/_15dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvNoDataFound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tvNoDataFound" android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

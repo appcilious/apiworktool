@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginTop="@dimen/_10dp">
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:src="@drawable/close_white" android:layout_centerVertical="true"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/tv_topevent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD AN EVENT" android:layout_centerInParent="true"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10dp" android:text="SAVE" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_130dp"/>
+    <RelativeLayout android:id="@+id/ll_uploadphoto" android:background="@drawable/eventbackground" android:layout_width="match_parent" android:layout_height="@dimen/_100dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="70dp" android:layout_marginRight="@dimen/_15dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_eventphoto" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_50dp" android:src="@drawable/upload"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10dp" android:text="Upload Event Photo"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5dp" android:layout_below="@+id/ll_uploadphoto">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8dp">
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:text="TITLE OF THE EVENT"/>
+            <EditText android:textSize="@dimen/_14sp" android:id="@+id/ed_titleofEvent" android:background="@drawable/grey_stroke" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/_5dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="STATUS"/>
+            <LinearLayout android:background="@drawable/bg_grey_stroke" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/_10dp">
+                <Spinner android:textSize="@dimen/_16sp" android:id="@+id/sp_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="Date"/>
+                    <EditText android:id="@+id/ed_dateOfEvent" android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_15dp" android:hint="--/--/----" android:editable="false" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="Time"/>
+                    <EditText android:id="@+id/ed_timeOfEvent" android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_15dp" android:hint="00:00:00" android:editable="false" android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="TYPE"/>
+            <EditText android:textSize="@dimen/_14sp" android:id="@+id/ed_typeOfEvent" android:background="@drawable/grey_stroke" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/_5dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp"/>
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="SUMMARY"/>
+            <LinearLayout android:background="@drawable/bg_grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_80dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp">
+                <EditText android:textSize="@dimen/_14sp" android:id="@+id/ed_summartOfEvent" android:background="@null" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="DESCRIPTION"/>
+            <LinearLayout android:background="@drawable/bg_grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_80dp" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp">
+                <EditText android:textSize="@dimen/_14sp" android:id="@+id/ed_descOFEvent" android:background="@null" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5dp" android:layout_marginTop="@dimen/_8dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:text="FICHIER JOINT"/>
+            <LinearLayout android:id="@+id/ll_attachFile" android:background="@drawable/button_style_stroke" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_15dp">
+                <TextView android:textSize="@dimen/_12sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tv_attachfile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ATTACHED FILE" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginBottom="@dimen/_10dp">
+                <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@+id/tv_saveEventData" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SAVE" android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

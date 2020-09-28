@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/rowBG" android:background="#d65819" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_alignParentRight="true">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/edit_task" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/img_edit" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/edit_white" android:tint="@android:color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/delete_task" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/img_delete" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/delete_white" android:tint="@android:color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rowFG" android:background="@android:color/white" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground">
+            <ImageView android:visibility="visible" android:layout_width="@dimen/_40dp" android:layout_height="@dimen/_40dp" android:src="@drawable/file"/>
+            <TextView android:textSize="14sp" android:textColor="@color/colorBlack" android:id="@+id/task_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="8dp" android:text="designprofilepoint.docx" android:layout_marginStart="60dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toTopOf="@+id/task_desc" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="12sp" android:id="@+id/task_desc" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="DOCX" android:lines="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/task_name" app:layout_constraintTop_toBottomOf="@+id/task_name"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.AdvanceDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/toolbar" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="@dimen/_50dp">
+            <ImageView android:id="@+id/side_navigation" android:layout_width="@dimen/_20dp" android:layout_height="@dimen/_20dp" android:layout_marginLeft="@dimen/_15dp" android:src="@drawable/menu_wht_pro" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/toolbarText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MY MEMBERS" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/chat" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15dp" android:src="@drawable/sms" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/add_event" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_white"/>
+                <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:text="Add Event"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/container" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_marginBottom="-1dp" android:layout_above="@+id/bottom_bar" android:layout_below="@+id/toolbar"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_bar" android:background="@color/background" android:layout_width="match_parent" android:layout_height="@dimen/_70dp" android:weightSum="6" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_members" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_member" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/members_blue"/>
+                <TextView android:textSize="@dimen/_10sp" android:textColor="@color/colorPrimary" android:id="@+id/tv_member" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Members" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_cv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_cv" android:layout_width="21dp" android:layout_height="@dimen/_24dp" android:src="@drawable/cv_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_cv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CV" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_network" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_network" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/network_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_network" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Network" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_wall" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_wall" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/wall_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_wall" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wall" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_wallpro" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_wallpro" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/wall_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_wallpro" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wall Pro" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_mail" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_mail" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/mail_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_mail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mail" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_alert" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_5dp" android:layout_marginLeft="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_alert" android:layout_width="@dimen/_24dp" android:layout_height="@dimen/_24dp" android:src="@drawable/alert_grey"/>
+                <TextView android:textSize="@dimen/_10sp" android:id="@+id/tv_alert" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Alert" android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/nav_view" android:background="@color/colorPrimary" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="match_parent" app:headerLayout="@layout/nav_header_layout" app:itemTextColor="#ffffff" app:menu="@menu/bottom_nav_menu"/>
+</com.infideap.drawerbehavior.AdvanceDrawerLayout>

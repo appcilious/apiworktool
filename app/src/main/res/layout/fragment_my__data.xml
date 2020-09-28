@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_30dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uploadata"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp">
+                    <TextView android:textSize="@dimen/_14sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload a File"/>
+                    <TextView android:textSize="@dimen/_13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload files from here"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_data" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/_15dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvNoDataFound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tvNoDataFound" android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

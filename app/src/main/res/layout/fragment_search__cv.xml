@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlSearch" android:background="@drawable/serach_background" android:layout_width="match_parent" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp" android:layout_marginRight="@dimen/_20dp">
+        <ImageView android:id="@+id/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:src="@drawable/search" android:layout_centerVertical="true"/>
+        <EditText android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/textGrey" android:id="@+id/ed_searchCV" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:hint="Search a CV.." android:layout_toRightOf="@+id/search_icon" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginRight="@dimen/_20dp" android:src="@drawable/sort" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#f5efef" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_20dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llAddResume" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginRight="@dimen/_10dp" android:weightSum="2">
+            <RelativeLayout android:id="@+id/add_resume" android:background="@drawable/button_style_stroke" android:layout_width="0dp" android:layout_height="@dimen/_40dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/_17sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add A Resume" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlImportCv" android:background="@drawable/button_style_stroke" android:layout_width="0dp" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_10dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/_17sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Import a CV" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_my_cv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10dp" android:layout_marginBottom="@dimen/_15dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <TextView android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvNoDataFound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tvNoDataFound" android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

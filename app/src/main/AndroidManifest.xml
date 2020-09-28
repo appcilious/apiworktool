@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.example.worktool_new" platformBuildVersionCode="29" platformBuildVersionName="10">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.example.worktool_new.Util.SharedPreference.App" android:debuggable="true" android:allowBackup="true" android:hardwareAccelerated="false" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.example.worktool_new.Views.Activities.SelectUserActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.example.worktool_new.Util.PreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|stateVisible|stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.WebDemoActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.AdvanvceCvSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.AddCer" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Cardonnes_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Motifs_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Atouts_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Freins_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Situation_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Besoin_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Engagemnets_Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Prochains_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Decisions_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Duree_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.addCer.Signature_Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.ParticipentsList" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.worktool_new.demo.MyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.AddArticle" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.EditSkills" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.MemberProfile" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.MailBoxInner" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.ComposeMail" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.ComposeSentMail" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Godfather" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.ImportCv" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.MemberChangePassword" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.EditProfile" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.UploadResume" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.WallPost" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Add_Event" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Mailbox" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Advanced_Search_Cv" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Add_Member" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.Login" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.worktool_new.Views.Activities.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.example.worktool_new.Views.Activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Dexter.Internal.Theme.Transparent" android:name="com.karumi.dexter.DexterActivity"/>
+        <activity android:theme="@style/FullscreenTheme" android:label="@string/title_activity_are__video_player" android:name="com.chinalwb.are.activities.Are_VideoPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppTheme" android:name="com.chinalwb.are.activities.Are_AtPickerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.chinalwb.are.strategies.defaults.DefaultProfileActivity"/>
+        <activity android:theme="@style/FullscreenTheme" android:label="@string/title_activity_default_image_preview" android:name="com.chinalwb.are.strategies.defaults.DefaultImagePreviewActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="com.jaiselrahman.filepicker.utils.FilePickerProvider" android:exported="false" android:authorities="com.example.worktool_new.filepicker.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/com_jaiselrahman_filepicker_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.jaiselrahman.filepicker.activity.FilePickerActivity"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.example.worktool_new.com.squareup.picasso"/>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_30dp">
+        <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp" android:text="Rename a file"/>
+        <TextView android:textSize="@dimen/_15sp" android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_15dp" android:text="RENAME A FILE"/>
+        <EditText android:id="@+id/etRenameData" android:background="@drawable/grey_stroke" android:paddingLeft="@dimen/_15dp" android:layout_width="match_parent" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginRight="@dimen/_20dp" android:paddingStart="@dimen/_15dp"/>
+        <Button android:textColor="@color/colorWhite" android:id="@+id/btnRecord" android:background="@drawable/button_style" android:layout_width="match_parent" android:layout_height="@dimen/_40dp" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginRight="@dimen/_20dp" android:text="RECORD"/>
+    </LinearLayout>
+</LinearLayout>

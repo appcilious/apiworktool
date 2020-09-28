@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/civParticipant" android:layout_width="@dimen/_50dp" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15dp" android:layout_marginStart="@dimen/_15dp" app:civ_border_color="#fff" app:civ_border_width="1dp"/>
+        <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="#000" android:ellipsize="end" android:id="@+id/tvParticipantName" android:padding="@dimen/_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/civParticipant" android:layout_toEndOf="@+id/civParticipant"/>
+        <TextView android:textSize="@dimen/_14sp" android:textStyle="bold" android:textColor="#ff93b5f7" android:id="@+id/tvParticipantEmail" android:padding="@dimen/_2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/civParticipant" android:layout_below="@+id/tvParticipantName" android:layout_toEndOf="@+id/civParticipant"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

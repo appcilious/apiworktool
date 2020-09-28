@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/card_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8dp" app:cardCornerRadius="@dimen/_5dp">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <ImageView android:id="@+id/ivListEventImage" android:layout_width="0dp" android:layout_height="@dimen/_130dp" android:src="@drawable/profileplaceholder" android:scaleType="fitXY" android:layout_weight="0.8"/>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp">
+                <TextView android:textSize="@dimen/_16sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/tvListEventName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mr. MEZU Lionel"/>
+                <TextView android:textSize="@dimen/_15sp" android:textColor="@color/textGrey" android:id="@+id/tvListEventTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Young Gurantee"/>
+                <TextView android:textSize="@dimen/_15sp" android:textColor="@color/textGrey" android:id="@+id/tvListEventType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8dp" android:text="Type: Event"/>
+                <RelativeLayout android:orientation="horizontal" android:background="@drawable/button_style_green_stroke" android:layout_width="@dimen/_100dp" android:layout_height="@dimen/_30dp" android:layout_marginTop="@dimen/_8dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ok_green"/>
+                        <TextView android:textSize="13sp" android:textColor="#1ad078" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:text="Register"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

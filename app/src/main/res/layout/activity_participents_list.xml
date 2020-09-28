@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rlToolbar" android:background="@drawable/gradiant" android:layout_width="match_parent" android:layout_height="@dimen/_60dp">
+            <TextView android:textSize="@dimen/_15sp" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LIST OF PARTICIPENTS" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlNoData" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10dp" android:layout_below="@+id/rlToolbar">
+            <ImageView android:layout_width="@dimen/_300dp" android:layout_height="wrap_content" android:src="@drawable/list" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlData" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10dp" android:layout_below="@+id/rlToolbar">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvParticipantList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

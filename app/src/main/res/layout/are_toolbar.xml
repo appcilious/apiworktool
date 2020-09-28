@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chinalwb.are.colorpicker.ColorPickerView android:id="@+id/rteColorPalette" android:background="@android:color/background_light" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:colorViewCheckedType="1" app:colorViewHeight="30dp" app:colorViewMarginLeft="2dp" app:colorViewMarginRight="2dp" app:colorViewWidth="30dp" app:colors="@array/colorPickerColors"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="?attr/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/rteEmoji" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/emoji"/>
+            <ImageView android:id="@+id/rteFontsize" android:padding="5dp" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/fontsize"/>
+            <ImageView android:id="@+id/rteFontface" android:padding="5dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/fontface"/>
+            <ImageView android:id="@+id/rteBold" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/bold"/>
+            <ImageView android:id="@+id/rteItalic" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/italic"/>
+            <ImageView android:id="@+id/rteUnderline" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/underline"/>
+            <ImageView android:id="@+id/rteStrikethrough" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/strikethrough"/>
+            <ImageView android:id="@+id/rteHr" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/hr"/>
+            <ImageView android:id="@+id/rteSubscript" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/subscript"/>
+            <ImageView android:id="@+id/rteSuperscript" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/superscript"/>
+            <ImageView android:id="@+id/rteQuote" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/quote"/>
+            <ImageView android:id="@+id/rteFontColor" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/foregroundcolor"/>
+            <ImageView android:id="@+id/rteBackground" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/background"/>
+            <ImageView android:id="@+id/rteLink" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_insert_link_black_48dp"/>
+            <ImageView android:id="@+id/rteListNumber" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/listnumber"/>
+            <ImageView android:id="@+id/rteListBullet" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/listbullet"/>
+            <ImageView android:id="@+id/rteIndentRight" android:padding="5dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/indentright"/>
+            <ImageView android:id="@+id/rteIndentLeft" android:padding="5dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/indentleft"/>
+            <ImageView android:id="@+id/rteAlignLeft" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/alignleft"/>
+            <ImageView android:id="@+id/rteAlignCenter" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/aligncenter"/>
+            <ImageView android:id="@+id/rteAlignRight" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/alignright"/>
+            <ImageView android:id="@+id/rteInsertImage" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/image"/>
+            <ImageView android:id="@+id/rteInsertVideo" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/video"/>
+            <ImageView android:id="@+id/rteAt" android:padding="5dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/at"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rteEmojiPanel" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0px"/>
+</merge>

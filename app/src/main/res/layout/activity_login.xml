@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/_170dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_50dp" android:src="@drawable/logo"/>
+    <TextView android:textSize="@dimen/_20sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp" android:text="Access to WorkTools"/>
+    <TextView android:textSize="@dimen/_15sp" android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_20dp" android:text="EMAIL" android:fontFamily="@font/open_sans_bold"/>
+    <LinearLayout android:background="@drawable/shape_rect_btn_style2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginRight="@dimen/_20dp">
+        <EditText android:textColor="@color/textGrey" android:id="@+id/editTextMail" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="abc@gmail.com" android:inputType="textEmailAddress"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_15sp" android:textColor="@color/textGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_10dp" android:text="PASSWORD" android:fontFamily="@font/open_sans_bold"/>
+    <LinearLayout android:background="@drawable/shape_rect_btn_style2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_20dp">
+        <EditText android:textColor="@color/textGrey" android:id="@+id/editTextPassword" android:padding="@dimen/_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="******" android:inputType="textPassword"/>
+    </LinearLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20dp" android:layout_marginTop="@dimen/_10dp" android:layout_marginRight="@dimen/_20dp">
+        <TextView android:textSize="@dimen/_15sp" android:textColor="@color/colorPrimary" android:id="@+id/resetPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset Password" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+    </RelativeLayout>
+    <Button android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/bt_login" android:background="@drawable/button_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_20dp" android:text="LOGIN"/>
+</LinearLayout>

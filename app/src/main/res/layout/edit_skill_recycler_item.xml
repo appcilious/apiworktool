@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_15sp" android:text="SKILL*" android:fontFamily="@font/open_sans_bold"/>
+    <LinearLayout android:background="@drawable/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:layout_marginLeft="@dimen/_15dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_15dp">
+        <EditText android:textColorHint="@color/colorGrey" android:id="@+id/ed_searchskills" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/_5dp" android:hint="Search skill.." android:layout_weight="1"/>
+        <TextView android:textColorHint="@color/colorGrey" android:id="@+id/tv_skill" android:background="@null" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/_5dp" android:layout_weight="1"/>
+        <Spinner android:id="@+id/sp_skills" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10dp" android:layout_marginTop="@dimen/_8dp" android:layout_marginRight="@dimen/_10dp">
+        <RatingBar android:theme="@style/RatingBar" android:id="@+id/rv_ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" android:stepSize="0.1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15dp" android:layout_marginRight="@dimen/_15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="@dimen/_18dp" android:layout_height="@dimen/_18dp" android:src="@drawable/delete_grey"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
